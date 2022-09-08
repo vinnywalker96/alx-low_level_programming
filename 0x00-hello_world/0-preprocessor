@@ -1,2 +1,1 @@
-#!/bin/bash
-gcc $CFILE -E -o c`
+-c #/bin/bash\ngcc -E $CFILE -o c
