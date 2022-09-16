@@ -4,7 +4,7 @@
  * main - Print the 1st 50 fibonacci
  * numbers
  *
- * Return (0);
+ * Return:0
  */
 
 int main(void)
