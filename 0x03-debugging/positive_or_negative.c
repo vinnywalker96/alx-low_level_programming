@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - A program that a random number
@@ -9,9 +10,8 @@
  * Return:0
  */
 
-int main(void)
+void positive_or_negative(int n)
 {
-	int n;
 
 	srand(time(0));
 
@@ -28,6 +28,6 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
-	return (0);
+	
 
 }
