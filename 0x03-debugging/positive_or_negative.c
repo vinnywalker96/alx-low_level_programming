@@ -3,7 +3,9 @@
 #include <time.h>
 
 /**
- * main - Entry point
+ * positive_or_negative - check description
+ * Description: checks for positive
+ * or negative numbers
  *
  * Return: Always 0 (Success)
  */
