@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * putsi2 - prints every other character
+ * puts2 - prints every other character
  * @str: string of the argument
  */
 
@@ -16,7 +16,6 @@ void puts2(char *str)
 	len -= 1;
 	for (i = 0; i <= len; i += 2)
 	{
-		
 		_putchar(str[i]);
 
 	}
