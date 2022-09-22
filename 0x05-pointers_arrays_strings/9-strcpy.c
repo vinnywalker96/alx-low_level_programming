@@ -15,6 +15,11 @@ char *_strcpy(char *dest, char *src)
 	{
 		*dest++ = *src++;
 	}
+	if (*src != '\0')
+	{
+		*str = *dest++;
+	}
+	
 	return (str);
 
 }
