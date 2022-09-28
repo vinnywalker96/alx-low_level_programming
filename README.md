@@ -1,15 +1,21 @@
-0.Write a script that runs a C file through the preprocessor and save the result into another file.
+0x08. C - Recursion
 
-1.Write a script that compiles a C file but does not link.
+Tasks
 
-2.Write a script that generates the assembly code of a C code and save it in an output file.
+0.Write a function that prints a string, followed by a new line.
 
-3.Write a script that compiles a C file and creates an executable named cisfun.
+1.Write a function that prints a string in reverse.
 
-4.Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+2.Write a function that returns the length of a string.
 
-5.Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
+3.Write a function that returns the factorial of a given number.
 
-6.
-Write a C program that prints the size of various types on the computer it is compiled and run on.
+4.Write a function that returns the value of x raised to the power of y.
 
+5.Write a function that returns the natural square root of a number.
+
+6.Write a function that returns 1 if the input integer is a prime number, otherwise return 0.
+
+7.Write a function that returns 1 if a string is a palindrome and 0 if not.
+
+8.Write a function that compares two strings and returns 1 if the strings can be considered identical, otherwise return 0.
