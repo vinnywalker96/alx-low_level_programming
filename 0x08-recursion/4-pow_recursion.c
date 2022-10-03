@@ -4,7 +4,7 @@
   * _pow_recursion - function that return x to the power of y
   * @x: the first argument
   * @y: the second argument
-  * Return : x ^ y
+  * Return: x ^ y
   */
 
 
