@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
   * *_strdup - function that returns a
@@ -19,7 +20,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	dest = malloc(sizeof(char));
+	dest = malloc(sizeof(char) * strlen(str));
 
 	for (i = 0; i < sizeof(str); i++)
 	{
