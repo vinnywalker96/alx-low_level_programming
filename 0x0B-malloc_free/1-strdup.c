@@ -13,18 +13,20 @@
 char *_strdup(char *str)
 {
 	char *dest;
-	unsigned int i;
+	long unsigned int i, j = 0;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	dest = malloc(sizeof(str));
+	dest = malloc(sizeof(char));
+	printf("%s\n", dest);
 
-	for (i = 0; i <= sizeof(str); i++)
+	for (i = 0; i <= strlen(str); i++)
 	{
-		dest[i] = str[i];
+		dest[i] = str[j];
+		j++;
 	}
 	return (dest);
 }
