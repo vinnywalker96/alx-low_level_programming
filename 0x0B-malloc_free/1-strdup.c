@@ -21,10 +21,10 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	dest = malloc(sizeof(char) * sizeof(char));
+	dest = malloc(sizeof(char));
 	printf("%s\n", dest);
 
-	for (i = 0; i <= strlen(str); i++)
+	for (i = 0; i <= sizeof(str); i++)
 	{
 		dest[i] = str[j];
 		j++;
