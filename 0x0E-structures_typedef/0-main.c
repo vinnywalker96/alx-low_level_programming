@@ -8,7 +8,7 @@
  */
 
 
-; int main(void)
+int main(void)
 {
 	struct dog my_dog;
 
