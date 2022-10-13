@@ -14,15 +14,19 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *mydog;
+	long unsigned int i;
 
 	mydog = (dog_t *)malloc(sizeof(dog_t *));
 
 	if (mydog == NULL)
-		return (NULL);
-
-	mydog->name = name;
-	mydog->age = age;
-	mydog->owner = owner;
+		free(mydog);
+		
+	for (i = 0; i <= sizeof(mydog); i++)
+	{		
+		mydog->name = name;
+		mydog->age = age;
+		mydog->owner = owner;
+	}
 
 
 	return (mydog);
