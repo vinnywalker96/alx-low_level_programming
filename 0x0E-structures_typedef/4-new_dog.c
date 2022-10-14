@@ -14,6 +14,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *mydog;
+	dog_t *newdog;
 	unsigned long int i;
 
 	mydog = (dog_t *)malloc(sizeof(dog_t *));
@@ -28,8 +29,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 		mydog->owner = owner;
 	}
 
+	newdog = mydog;
+	
 
-	return (mydog);
+
+
+
+	return (newdog);
 
 
 }
