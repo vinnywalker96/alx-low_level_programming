@@ -67,7 +67,7 @@ char *_strdup(const char *str)
 
 	len = _strlen(str);
 
-	new =(char * )malloc(sizeof(len + 1) * sizeof(char));
+	new = (char *)malloc(sizeof(len + 1) * sizeof(char));
 
 	if (new == NULL)
 		return (NULL);
