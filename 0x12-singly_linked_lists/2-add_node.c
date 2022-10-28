@@ -11,84 +11,27 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new;
+	list_t *new_node;
 
-	new = malloc(sizeof(list_t));
+	new_node = malloc(sizeof(list_t));
 
-	if (new == NULL)
-		return (NULL);
-
-
-	new->str = _strdup(str);
-
-	if (new->str == NULL)
-
-		return (NULL);
-	if (!new && !new->str)
+	if (new_node == NULL)
 	{
-		free(new);
+		return (NULL);
 	}
 
-	new->len = _strlen(str);
-	new->next = *head;
+	new_node->str = strdup(str);
 
-	*head = new;
-
-	return (new);
-	free(new);
-}
-
-
-/**
- * _strlen - counts number of character
- * @s: takes str as argument
- * Return: integer
- */
-
-int _strlen(const char *s)
-{
-	int len;
-
-	len = 0;
-	while (*s != '\0')
+	if (new_node->str == NULL)
 	{
-		len = len + 1;
-		s = s + 1;
-	}
-
-	return (len);
-}
-
-
-/**
- * _strdup - copies str to new location
- * @str: input str
- * Return: new copy
- */
-
-char *_strdup(const char *str)
-{
-	int len;
-	char *new, *saved;
-
-	len = _strlen(str);
-
-	new = (char *)malloc(sizeof(len + 1) * sizeof(char));
-
-	if (new == NULL)
 		return (NULL);
-
-	saved = new;
-
-	while (*str != '\0')
-	{
-		*new = *str;
-		new = new + 1;
-		str = str + 1;
 	}
 
-	new = '\0';
+	new_node->len = strlen(str);
+	new_node->next = (*head);
 
-	return (saved);
+	(*head) = new_node;
+
+	return (new_node);
 
 }
