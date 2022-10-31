@@ -8,33 +8,21 @@
 
 int pop_listint(listint_t **head)
 {
-	listint_t *temp = (*head), *prev;
+	listint_t *temp = NULL;
+	int num_nodes = 0;
 
-	
 
-	if (temp != NULL)
+	if (*head == NULL)
 	{
-		(*head) = temp->next;
-		free(temp);
-		return (1);
-		
-		
+		return (-1);
 	}
 
-	while (temp != NULL)
-	{
-		prev = temp;
-		temp = temp->next;
-	}
+	temp = (*head)->next;
+	num_nodes = (*head)->n;
+	free(*head);
+	*head = temp;
 
-	if (temp == NULL)
-	{
-		return (0);
-	}
-	
+	return (num_nodes);
 
-	prev->next = temp->next;
 
-	free(temp);
-	return (0);
 }
