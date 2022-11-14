@@ -22,9 +22,11 @@ int create_file(const char *filename, char *text_content)
 	write(o, text_content, len);
 	if (text_content == NULL)
 	{
-		return (o);
+		return (1);
 
 	}
+	else
+		return (-1);
 
 	close(o);
 
@@ -34,6 +36,12 @@ int create_file(const char *filename, char *text_content)
 	buf = text_content;
 	r = read(o, buf, len);
 	close(o);
+
+	if (!filename && !text_content)
+		return (-1);
+	else
+		return (1);
+
 
 	return (r);
 }
