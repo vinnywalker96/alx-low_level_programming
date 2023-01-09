@@ -8,13 +8,19 @@
 
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *new_node;
+	dlistint_t *current;
 
-	while (head != NULL)
+	if (head != NULL)
 	{
-		new_node = head;
-		head = head->next;
-		head = head->prev;
-		free(new_node);
+		while (head->prev != NULL)
+		{
+			head = head->prev;
+		}
+	}
+
+	while ((current = head) != NULL)
+	{
+		head = head-> next;
+		free(current);
 	}
 }
