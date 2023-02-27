@@ -12,6 +12,4 @@ main.o: main.c
 	$(CC) main.c -c
 
 school: school.o main.o
-	$(CC) school.o main.o -o $(NAME)
-
-
+	$(CC) $(OBJ) -o $(NAME)
